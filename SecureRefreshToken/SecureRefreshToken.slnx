@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SecureRefreshToken.Api/SecureRefreshToken.Api.csproj" />
+    <Project Path="src/SecureRefreshToken.Application/SecureRefreshToken.Application.csproj" />
+    <Project Path="src/SecureRefreshToken.Domain/SecureRefreshToken.Domain.csproj" />
+    <Project Path="src/SecureRefreshToken.Infrastructure/SecureRefreshToken.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SecureRefreshToken.IntegrationTests/SecureRefreshToken.IntegrationTests.csproj" />
+    <Project Path="tests/SecureRefreshToken.UnitTests/SecureRefreshToken.UnitTests.csproj" />
+  </Folder>
+</Solution>
