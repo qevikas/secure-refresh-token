@@ -3,9 +3,9 @@ name: .NET CI
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, st-1.1.0]
   pull_request:
-    branches: [main]
+    branches: [main, st-1.1.0]
   workflow_dispatch:
 
 permissions:
