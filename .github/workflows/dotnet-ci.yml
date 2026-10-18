@@ -15,6 +15,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./SecureRefreshToken
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -28,10 +32,10 @@ jobs:
         run: dotnet --info
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore SecureRefreshToken.slnx
 
       - name: Build solution
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build SecureRefreshToken.slnx --configuration Release --no-restore
 
       - name: Run automated tests
-        run: dotnet test --configuration Release
+        run: dotnet test SecureRefreshToken.slnx --configuration Release
