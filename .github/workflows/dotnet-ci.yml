@@ -17,7 +17,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./SecureRefreshToken
+        working-directory: SecureRefreshToken
 
     steps:
       - name: Checkout repository
@@ -38,4 +38,4 @@ jobs:
         run: dotnet build SecureRefreshToken.slnx --configuration Release --no-restore
 
       - name: Run automated tests
-        run: dotnet test SecureRefreshToken.slnx --configuration Release
+        run: dotnet test SecureRefreshToken.slnx --configuration Release --no-build
