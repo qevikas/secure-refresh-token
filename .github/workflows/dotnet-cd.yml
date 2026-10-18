@@ -13,6 +13,10 @@ jobs:
     name: Build, Test and Package
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: SecureRefreshToken
+
     steps:
       - name: Checkout source code
         uses: actions/checkout@v6
